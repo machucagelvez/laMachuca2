@@ -1,21 +1,68 @@
-main, footer{
-    background-color: rgb(218, 218, 218);
+main{
+    background-color: rgb(241, 239, 237);
     background-attachment: fixed;
 }
 
-p{
-    font-size: 16px;
-    font-family: 'Dosis', sans-serif;
-    color: #0F7A97;
+h1{
+    font-family: 'Finger Paint', cursive;
+    text-align: center;
+    color: rgb(194, 159, 108);
+    font-size: 50px;    
 }
 
-.parrafo{
+h2{
+    font-family: 'Neucha', cursive;
+    font-size: 35px;
+    color: rgb(155, 71, 15);
+}
+
+.imagen{
+    width: 500px;
+    border: rgb(194, 159, 108) inset 3px;
+    margin-top: 20px;    
+    margin-left: 400px;
+}
+
+ul{
+    font-family: 'Finger Paint', cursive;
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;    
+}
+
+li a{
+    padding: 2px 7px 2px 7px;
+    color: rgb(194, 159, 108);
+    background-color: rgb(241, 239, 237);
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+p{
+    font-family: 'Delius', cursive;
     font-size: 20px;
-    font-family: 'Dosis', sans-serif;
-    color: #970f48;
+    color: #250e04;    
+}
+
+#pie{
+    font-size: 13px;
+    text-align: center;
 }
 
 .enfasis{
     font-size: 18px;
-    color: #e04212;
+    color: #17aa12;
+       
 }
