@@ -1,6 +1,9 @@
 main{
     background-color: rgb(241, 239, 237);
     background-attachment: fixed;
+    font-family: 'Delius', cursive;
+    font-size: 20px;
+    color: #2e1105;
 }
 
 h1{
@@ -17,7 +20,7 @@ h2{
 }
 
 .imagen{
-    width: 500px;
+    width: 550px;
     border: rgb(194, 159, 108) inset 3px;
     margin-top: 20px;    
     margin-left: 400px;
@@ -50,19 +53,10 @@ li a:hover{
     color: #ffffff;
  }
 
-p{
-    font-family: 'Delius', cursive;
-    font-size: 20px;
-    color: #250e04;    
-}
-
-#pie{
-    font-size: 13px;
+footer{
+    background-color: rgb(77, 76, 75);
+    color: whitesmoke;
+    font-size: 14px;
     text-align: center;
-}
-
-.enfasis{
-    font-size: 18px;
-    color: #17aa12;
-       
+    font-family: 'Alef', sans-serif;
 }

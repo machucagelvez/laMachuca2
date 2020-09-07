@@ -1,0 +1,42 @@
+h1{
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    color: rgb(155, 71, 15);
+    font-size: 50px;    
+    text-align: center;
+}
+
+.imagen{
+    width: 700px;
+    margin-top: 20px;    
+    margin-left: 300px;
+}
+
+h2{
+    font-family: 'Neucha', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(155, 71, 15);
+}
+
+p{
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-size: 20px;
+    color: #5f570b;
+    text-align: justify;
+}
+
+.video{
+    width: 600px;
+    margin-top: 20px;    
+    margin-left: 380px;
+}
+
+footer{
+    background-color: rgb(77, 76, 75);
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Alef', sans-serif;    
+}
