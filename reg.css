@@ -1,0 +1,68 @@
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    color: #0e6d41;
+    font-size: 45px;    
+    text-align: center;
+}
+
+h2{
+    font-family: 'Architects Daughter', cursive;
+    color: #2b8f60;
+    font-size: 25px;    
+}
+
+h3{
+    font-family: 'Architects Daughter', cursive;
+    color: #2b8f60;
+    font-size: 20px;  
+}
+
+p{
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+}
+
+form{
+    font-family: 'Architects Daughter', cursive;
+    color: #5a5553;
+    font-size: 20px; 
+}
+
+input{
+    border: 1px solid rgb(122, 119, 119);
+    padding: 2px 10px 2px 5px;
+    font-family: 'Bubbler One', sans-serif;    
+    border-radius: 5px;
+}
+
+#nombre{
+    margin-left: 33px;
+}
+
+#correo{
+    margin-left: 62px;
+}
+
+#enviar{
+    padding: 2px 10px 2px 10px;
+    background-color: #b8d4c7;
+    font-weight: bold;
+    margin-left: 247px;
+}
+
+footer{
+    background-color: rgb(77, 76, 75);
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Alef', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;    
+}

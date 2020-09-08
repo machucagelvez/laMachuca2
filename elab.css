@@ -1,3 +1,8 @@
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 h1{
     font-family: 'Neucha', cursive;
     font-weight: bold;
@@ -38,5 +43,7 @@ footer{
     color: whitesmoke;
     font-size: 14px;
     text-align: center;
-    font-family: 'Alef', sans-serif;    
+    font-family: 'Alef', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
 }

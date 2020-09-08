@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="reg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@700&family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
     
 </head>
 <body>
 
     <header>
-        <h1>Registro</h1>
-        <nav>
-            <ol>
-                <li>Opción 1</li>
-                <li>Opción 2</li>
-                <li>Opción 3</li>
-            </ol>
-        </nav>
-
+        <h1>REGISTRARSE EN LA MACHUCA</h1>
     </header>
     <main>
-        <h3>Bienvenido</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga exercitationem laboriosam! Fuga et laboriosam sed deleniti tempore, culpa veritatis repudiandae quasi. Maiores pariatur harum nam quasi? Sed, voluptas modi.</p>
-        <hr>
+        <h2>Por favor ingrese sus datos para registrarse:</h2>
         <form>
-            <input type="text" id="nombreUsuario" name="nombreUsuario">
-            <input type="password" placeholder="Contraseña">
-            <label for="cedulaUsuario">Cédula:</label>
-            <input type="number" id="cedulaUsuario" name="cedulaUsuario">
-            <input type="email" value="@">
-            <input type="radio">
-            <input type="submit" value="Enviar">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Digite su nombre"><br>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="correo" placeholder="Digite su correo"><br>
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" placeholder="Digite la Contraseña"><br>
+            <input type="submit" id="enviar">
+            <h3>Aviso de Privacidad</h3>
+            <p>Cerveza La Machuca, en cumplimiento de la Ley Estatutaria 1581 de 2012 por la cual se establece el Régimen General de Protección de Datos en Colombia y el Decreto Reglamentario 1377 de 2013, así como de las mejores prácticas a nivel internacional en esta materia, es responsable del tratamiento (recolección, almacenamiento, uso, circulación o supresión) de datos personales en desarrollo de su objeto misional.</p>
+            <p>Los titulares de datos personales tienen el derecho de conocer, actualizar, rectificar o suprimir frente a los responsables del tratamiento, la información recolectada en las bases de datos o archivos, en los términos establecidos en las normas vigentes y en la Política de Tratamiento de Datos Personales, las cuales podrán ser consultadas a continuación.</p>            
+            <input type="checkbox" name="casilla" id="casilla">
+            <label for="casilla">Acepto términos y condiciones</label>
         </form>
+
+
         
 
     </main>
     <hr>
     <footer>
-        <p>&copy; Fabián Machuca</p>
-        <p>&#9750; machucagelvez@gmail.com</p>
-        <p>Envigado, 2020</p>
-
+        <address>
+            Fabián Machuca<br>
+            &#9750; machucagelvez@gmail.com<br>
+            &copy; Todos los derechos reservados<br>
+            Envigado, 2020
+        </address>  
     </footer>
 
 </body>
