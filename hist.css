@@ -1,3 +1,7 @@
+li a{
+    font-size: 25px;
+}
+
 main{
     margin-left: 30px;
     margin-right: 30px;
@@ -12,8 +16,7 @@ h1{
 }
 
 .imagen{
-    width: 500px;
-    margin-left: 430px;
+    width: 600px;    
 }
 
 h2{

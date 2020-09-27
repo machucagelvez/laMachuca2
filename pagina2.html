@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="hist.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
@@ -11,24 +12,81 @@
 </head>
 <body>
     <header>
-        <h1>HISTORIA DE LA CERVEZA</h1>
-    </header>
-    
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" width="100" height="100" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#cervezas">Cervezas</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="pagina2.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Elaboración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>    
     <main>
-        <img src="img/historia.jpg" alt="ImagenHistoria" class="imagen">
-        <h2>Hace miles de años...</h2>
-        <p>Quien inventó la cerveza era un hombre sabio, dijo Platón en el siglo IV a.C. Este brebaje milenario, cuyo origen se asocia al inicio del período neolítico, hace unos 12.000 años, ha despertado pasiones en todo el mundo a lo largo de su dilatada historia. Si no, que se lo digan al estadounidense Sam Calagione, experto en recrear antiguas recetas de cerveza entre las que se encuentra una de las primeras de las que se tiene constancia; incluye arroz, uvas, miel y frutos de espino chino, y fue inventada hace 9.000 años. Calagione la "copió" a partir de las muestras que Patrick McGovern, colaborador de National Geographic y conocido como «el arqueólogo de la cerveza», encontró en unos restos cerámicos del yacimiento neolítico de Jiahu, en China. McGovern había localizado anteriormente los restos de cerveza de cebada más antiguos, del año 3400 a.C., en los montes Zagros de Irán.</p>
-        <audio src="img/historia.mp3" controls></audio>
-        <p>En Europa los vestigios más antiguos se encontraron en la cueva de Casa Sadurní, en la localidad barcelonesa de Begues, y datan de 3000 a.C. Otras investigaciones indican que también se fabricaba cerveza en Mesopotamia y en el antiguo Egipto. Aunque durante el período grecorromano, entre los siglos V a.C. y II d.C., se ensalzó el consumo del vino sobre la cerveza, esta siguió medrando hasta convertirse en una bebida popular que se elaboraba principalmente en los monasterios. Como la de la abadía de Weihenstephan, un monasterio benedictino de Baviera que, con sus mil años de historia, es la planta cervecera en activo más antigua del mundo. También en Alemania fue donde se promulgó en 1516 la primera Ley de la Pureza, que estipuló que la cerveza solo podría elaborarse con agua, cebada y lúpulo. En España, el emperador Carlos I trajo una corte de maestros cerveceros y trasladó a nuestro país el gusto de su Flandes natal por la preciada bebida. Es en esa época cuando se instalan las primeras cerveceras, la primera en Madrid, y después en Santander.</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>HISTORIA DE LA CERVEZA</h1>
+                <img src="img/historia.jpg" alt="ImagenHistoria" class="imagen">
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <h2>Hace miles de años...</h2>
+            </div>
+            <div class="row text-jusfify">
+                <div class="col-12 col-md-6">                    
+                    <p>Quien inventó la cerveza era un hombre sabio, dijo Platón en el siglo IV a.C. Este brebaje milenario, cuyo origen se asocia al inicio del período neolítico, hace unos 12.000 años, ha despertado pasiones en todo el mundo a lo largo de su dilatada historia. Si no, que se lo digan al estadounidense Sam Calagione, experto en recrear antiguas recetas de cerveza entre las que se encuentra una de las primeras de las que se tiene constancia; incluye arroz, uvas, miel y frutos de espino chino, y fue inventada hace 9.000 años. Calagione la "copió" a partir de las muestras que Patrick McGovern, colaborador de National Geographic y conocido como «el arqueólogo de la cerveza», encontró en unos restos cerámicos del yacimiento neolítico de Jiahu, en China. McGovern había localizado anteriormente los restos de cerveza de cebada más antiguos, del año 3400 a.C., en los montes Zagros de Irán.</p>
+                    <audio src="img/historia.mp3" controls></audio>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>En Europa los vestigios más antiguos se encontraron en la cueva de Casa Sadurní, en la localidad barcelonesa de Begues, y datan de 3000 a.C. Otras investigaciones indican que también se fabricaba cerveza en Mesopotamia y en el antiguo Egipto. Aunque durante el período grecorromano, entre los siglos V a.C. y II d.C., se ensalzó el consumo del vino sobre la cerveza, esta siguió medrando hasta convertirse en una bebida popular que se elaboraba principalmente en los monasterios. Como la de la abadía de Weihenstephan, un monasterio benedictino de Baviera que, con sus mil años de historia, es la planta cervecera en activo más antigua del mundo. También en Alemania fue donde se promulgó en 1516 la primera Ley de la Pureza, que estipuló que la cerveza solo podría elaborarse con agua, cebada y lúpulo. En España, el emperador Carlos I trajo una corte de maestros cerveceros y trasladó a nuestro país el gusto de su Flandes natal por la preciada bebida. Es en esa época cuando se instalan las primeras cerveceras, la primera en Madrid, y después en Santander.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <hr>
-    <footer>
-        <address>
-            Fabián Machuca<br>
-            &#9750; machucagelvez@gmail.com<br>
-            &copy; Todos los derechos reservados<br>
-            Envigado, 2020
-        </address>  
+    <footer class="bg-warning text-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3 text-center mt-2">
+                    <address>
+                        Fabián Machuca <br>
+                        Envigado, 2020 <br>
+                        machucagelvez@gmail.com
+                    </address>                    
+                </div>
+                <div class="col-12 col-md-3 text-center mt-2">
+                    <address>
+                        Facebook <br>
+                        Instagram <br>
+                        Twitter
+                    </address> 
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <p class="text-center">Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
