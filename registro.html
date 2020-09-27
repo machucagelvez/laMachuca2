@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="reg.css">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cabin+Sketch:wght@700&family=Neucha&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">   
 </head>
 <body>
     <header>
@@ -27,10 +27,10 @@
                     <a class="nav-link" href="index.html#cervezas">Cervezas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pagina2.html">Historia</a>
+                  <a class="nav-link" href="historia.html">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pagina1.html">Elaboración</a>
+                    <a class="nav-link" href="elaboracion.html">Elaboración</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="registro.html">Registro</a>
@@ -38,47 +38,126 @@
               </ul>
             </div>
         </nav>
-        <h1>REGISTRARSE EN LA MACHUCA</h1>
+        
     </header>
     <main>
-        <h2>Por favor ingrese sus datos para registrarse:</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Digite su nombre"><br>
-            <label for="correo">Email:</label>
-            <input type="email" id="correo" name="correo" placeholder="Digite su correo"><br>
-            <label for="clave">Contraseña:</label>
-            <input type="password" id="clave" name="clave" placeholder="Digite la Contraseña"><br>
-            <input type="submit" id="enviar">
-            <h3>Aviso de Privacidad</h3>
-            <p>Cerveza La Machuca, en cumplimiento de la Ley Estatutaria 1581 de 2012 por la cual se establece el Régimen General de Protección de Datos en Colombia y el Decreto Reglamentario 1377 de 2013, así como de las mejores prácticas a nivel internacional en esta materia, es responsable del tratamiento (recolección, almacenamiento, uso, circulación o supresión) de datos personales en desarrollo de su objeto misional.</p>
-            <p>Los titulares de datos personales tienen el derecho de conocer, actualizar, rectificar o suprimir frente a los responsables del tratamiento, la información recolectada en las bases de datos o archivos, en los términos establecidos en las normas vigentes y en la Política de Tratamiento de Datos Personales, las cuales podrán ser consultadas a continuación.</p>            
-            <input type="checkbox" name="casilla" id="casilla">
-            <label for="casilla">Acepto términos y condiciones</label>
-        </form>
+        <div class="container">
+            <div class="row justify-content-center mt-2">
+                <h3 class="text-center">Por favor ingrese sus datos para registrarse:</h3>
+            </div>
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-4">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Apellidos</label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-4">
+                        <label>Ciudad</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Teléfono</label>
+                      <input type="number" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <label class="col-md-4 col-form-label text-right font-weight-bold">Como te enteraste de La Machuca:</label>
+                    <div class="form-group col-md-4">
+                        <select class="form-control">
+                            <option selected>Seleccionar</option>
+                            <option>Facebook</option>
+                            <option>Instagram</option>
+                            <option>Otra persona</option>
+                            <option>Publicidad física</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>                             
+                <div class="form-row justify-content-center">
+                    <div class="col-3">
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#tyc">
+                        Términos y condiciones
+                    </button>                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="tyc" tabindex="-1" role="dialog" aria-labelledby="Modaltyc" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title font-weight-bold">Términos y condiciones</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-justify text-dark">Cerveza La Machuca, en cumplimiento de la Ley Estatutaria 1581 de 2012 por la cual se establece el Régimen General de Protección de Datos en Colombia y el Decreto Reglamentario 1377 de 2013, así como de las mejores prácticas a nivel internacional en esta materia, es responsable del tratamiento (recolección, almacenamiento, uso, circulación o supresión) de datos personales en desarrollo de su objeto misional.</p>
+                                <p class="text-justify text-dark">Los titulares de datos personales tienen el derecho de conocer, actualizar, rectificar o suprimir frente a los responsables del tratamiento, la información recolectada en las bases de datos o archivos, en los términos establecidos en las normas vigentes y en la Política de Tratamiento de Datos Personales, las cuales podrán ser consultadas a continuación.</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label font-weight-bold" for="gridCheck">
+                                Aceptar términos y condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-warning font-weight-bold float-md-right float-none">Registrarse</button>
+                    </div>
+                </div>      
+            </form>
+        </div>
     </main>
     <hr>
     <footer class="bg-warning text-dark">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-3 text-center mt-2">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 text-center mt-2">
                     <address>
                         Fabián Machuca <br>
                         Envigado, 2020 <br>
                         machucagelvez@gmail.com
-                    </address>                    
+                    </address>                  
                 </div>
-                <div class="col-12 col-md-3 text-center mt-2">
-                    <address>
-                        Facebook <br>
-                        Instagram <br>
-                        Twitter
-                    </address> 
+                <div class="col-12 col-md-2 text-center mt-2">
+                    <a href="https://www.instagram.com/cervezalamachuca/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/36/000000/instagram-new.png"/>
+                    </a>
+                    <a href="https://www.facebook.com/LaMachucaCerveza/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/facebook.png"/>
+                    </a>
+                    <a href="https://twitter.com/fabianmachuca" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+                    </a>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
-                    <p class="text-center">Todos los derechos reservados</p>
+                    <address class="text-center">Todos los derechos reservados</address>
+                </div>
             </div>
         </div>
     </footer>

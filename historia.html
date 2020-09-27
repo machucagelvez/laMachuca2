@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="hist.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">    
 </head>
 <body>
     <header>
@@ -20,36 +19,40 @@
               <span class="navbar-toggler-icon"></span>
             </button>          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#cervezas">Cervezas</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="pagina2.html">Historia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pagina1.html">Elaboración</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="registro.html">Registro</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cervezas">Cervezas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="elaboracion.html">Elaboración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <h4>HISTORIA DE LA CERVEZA</h4>
+                </span>
             </div>
         </nav>
     </header>    
     <main>
-        <div class="container">
+        <div class="container mt-2">
             <div class="row justify-content-center">
-                <h1>HISTORIA DE LA CERVEZA</h1>
-                <img src="img/historia.jpg" alt="ImagenHistoria" class="imagen">
+                <div class="col-12 col-md-6">
+                    <img src="img/historia.jpg" alt="ImagenHistoria" class="w-100">
+                </div>                
             </div>
             <div class="row mt-2 justify-content-center">
                 <h2>Hace miles de años...</h2>
             </div>
-            <div class="row text-jusfify">
+            <div class="row text-justify">
                 <div class="col-12 col-md-6">                    
                     <p>Quien inventó la cerveza era un hombre sabio, dijo Platón en el siglo IV a.C. Este brebaje milenario, cuyo origen se asocia al inicio del período neolítico, hace unos 12.000 años, ha despertado pasiones en todo el mundo a lo largo de su dilatada historia. Si no, que se lo digan al estadounidense Sam Calagione, experto en recrear antiguas recetas de cerveza entre las que se encuentra una de las primeras de las que se tiene constancia; incluye arroz, uvas, miel y frutos de espino chino, y fue inventada hace 9.000 años. Calagione la "copió" a partir de las muestras que Patrick McGovern, colaborador de National Geographic y conocido como «el arqueólogo de la cerveza», encontró en unos restos cerámicos del yacimiento neolítico de Jiahu, en China. McGovern había localizado anteriormente los restos de cerveza de cebada más antiguos, del año 3400 a.C., en los montes Zagros de Irán.</p>
                     <audio src="img/historia.mp3" controls></audio>
@@ -60,28 +63,32 @@
             </div>
         </div>
     </main>
-    <hr>
     <footer class="bg-warning text-dark">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-3 text-center mt-2">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 text-center mt-2">
                     <address>
                         Fabián Machuca <br>
                         Envigado, 2020 <br>
                         machucagelvez@gmail.com
-                    </address>                    
+                    </address>                  
                 </div>
-                <div class="col-12 col-md-3 text-center mt-2">
-                    <address>
-                        Facebook <br>
-                        Instagram <br>
-                        Twitter
-                    </address> 
+                <div class="col-12 col-md-2 text-center mt-2">
+                    <a href="https://www.instagram.com/cervezalamachuca/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/36/000000/instagram-new.png"/>
+                    </a>
+                    <a href="https://www.facebook.com/LaMachucaCerveza/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/facebook.png"/>
+                    </a>
+                    <a href="https://twitter.com/fabianmachuca" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+                    </a>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
-                    <p class="text-center">Todos los derechos reservados</p>
+                    <address class="text-center">Todos los derechos reservados</address>
+                </div>
             </div>
         </div>
     </footer>

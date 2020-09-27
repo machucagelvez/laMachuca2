@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elaboración</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="elab.css">-->
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">       
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">     
 </head>
 <body>
     <header>
@@ -19,30 +19,32 @@
               <span class="navbar-toggler-icon"></span>
             </button>          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#cervezas">Cervezas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina2.html">Historia</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="pagina1.html">Elaboración</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="registro.html">Registro</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cervezas">Cervezas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="elaboracion.html">Elaboración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <h4>ELABORACIÓN DE LA CERVEZA</h4>
+                </span>
             </div>
         </nav>        
     </header>   
     <main>
-        <div class="container">
+        <div class="container mt-2">
             <div class="row justify-content-center">                
-                    <h1 class="text-center">ELABORACIÓN DE LA CERVEZA</h1>
                     <img src="img/elaboracion.jpg" alt="ProcesoElaboración" class="w-100">                
             </div>
             <div class="row mt-2">
@@ -65,7 +67,7 @@
                     <p>El mosto se lleva a ebullición con el objetivo de aportar amargor y aroma presentes en el lúpulo. Además, durante esta etapa se esteriliza el mosto, se coagulan proteínas y se evaporan aromas indeseables. Normalmente este proceso dura en torno a una hora o más, dependiendo del estilo de cerveza que se esté elaborando. Posteriormente el mosto final es sometido a una especie de centrifugado o whirpool.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-12 col-md-6">
                     <h2>5. Fermentación</h2>
                     <p>Finalmente llegó el momento de enfriar y airear el mosto para luego sembrar la levadura. Durante la fermentación se transforman los azúcares fermentables en alcohol y CO2, al tiempo que se generan una gran variedad de compuestos, muchos de los cuales contribuyen a darle los aromas característicos tan populares de la cerveza. Usualmente en el proceso cervecero se utilizan dos grandes familias de levaduras: lager y ale. Este proceso se desarrolla en tanques de fermentación que en ocasiones son conocidos como fermentadores.</p>
@@ -81,32 +83,37 @@
                     <p>Generalmente al terminar la maduración la cerveza es sometida a un proceso de filtración para separar pequeñas partículas de levadura y compuestos que aún se encuentran en suspensión. Una vez filtrada se obtiene la cerveza brillante, la cual se envasa en diferentes formatos para su consumo y en muchos casos se pasteuriza para luego poner a disposición de los Cervecistas, que sólo tendrán que preocuparse de abrir, servir y disfrutar.</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <video src="img/fabricacion.mp4" controls class="w-100"></video>
+                    <video src="img/fabricacion.mp4" controls class="w-100 mb-2"></video>
                 </div>
             </div>           
         </div>     
     </main>
     <footer class="bg-warning text-dark">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-3 text-center mt-2">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 text-center mt-2">
                     <address>
                         Fabián Machuca <br>
                         Envigado, 2020 <br>
                         machucagelvez@gmail.com
-                    </address>                    
+                    </address>                  
                 </div>
-                <div class="col-12 col-md-3 text-center mt-2">
-                    <address>
-                        Facebook <br>
-                        Instagram <br>
-                        Twitter
-                    </address> 
+                <div class="col-12 col-md-2 text-center mt-2">
+                    <a href="https://www.instagram.com/cervezalamachuca/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/36/000000/instagram-new.png"/>
+                    </a>
+                    <a href="https://www.facebook.com/LaMachucaCerveza/" class="mr-2" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/facebook.png"/>
+                    </a>
+                    <a href="https://twitter.com/fabianmachuca" target="_blank">
+                        <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+                    </a>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
-                    <p class="text-center">Todos los derechos reservados</p>
+                    <address class="text-center">Todos los derechos reservados</address>
+                </div>
             </div>
         </div>
     </footer>
