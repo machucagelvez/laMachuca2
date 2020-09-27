@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Machuca Cerveza Artesanal</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="estilos.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
@@ -12,7 +13,34 @@
 </head>
 <body>
     <header>
-        <h1>CERVEZA LA MACHUCA</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" width="100" height="100" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cervezas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Elaboración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!--<h1>CERVEZA LA MACHUCA</h1>
         <nav>
             <ul>
                 <li><a href="pagina2.html">Historia</a></li>
@@ -22,25 +50,94 @@
                 <li><a href="#dorada">Dorada</a></li>
                 <li><a href="registro.html">Registro</a></li>
             </ul>            
-        </nav>        
+        </nav>-->        
     </header>
     <main>
-        <img src="img/logo.png" alt="imagenCerveza" class="imagen">
-        <h2>Descripción de la cerveza</h2>
-        <p>Cerveza elaborada con agua, lúpulo, levadura, malta e ingredientes seleccionados según su estilo. Producción totalmente artesanal, sin filtar ni uso de productos químicos, cualidades que la hacen una cerveza turbia.</p>
-        <h2>Presentaciones</h2>
-        <p id="porter">Porter Oscura, sabor intenso a malta tostada y amarga con notas a café y chocolate, otorgándole una impresión ahumada.</p>
-        <p id="ambar">Ambar Pale Ale, color ambar intenso de espuma blanca, es refrescante con notas caramelizadas y sabor maltoso que perdura hasta el final del trago trasmitiendo la calidez del alcohol.</p>
-        <p id="dorada">Dorada, color dorado de espuma blanca y sabor prolongado y especiado. Es ligeramente dulce con notas de miel y pan, con aroma a hierbas y cítricos. Amargor medio amaderado.</p>        
+        <div class="container bg-light">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/logo.jpg" class="d-block w-100" alt="ambar">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/etiqueta.png" class="d-block w-100" alt="...">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="img/detalle.jpg" class="d-block w-100" alt="...">
+                        </div>-->
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">                
+                <div class="col-12 col-md-6">
+                    <h1 class="mt-3 text-center">NUESTRAS CERVEZAS</h1>
+                    <p class="text-center">Elaboradas con agua, lúpulo, levadura, malta e ingredientes seleccionados según su estilo. Producción totalmente artesanal, sin filtar ni uso de productos químicos, cualidades que la hacen una cerveza turbia.</p>
+                </div>                
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <img src="img/ambar.jpg" alt="ambar" class="img-fluid">
+                </div>             
+                <div class="col-12 col-md-3">
+                    <h3>Ambar Pale Ale</h3>
+                    <p class="text-justify">Color ambar intenso de espuma blanca, es refrescante con notas caramelizadas y sabor maltoso que perdura hasta el final del trago trasmitiendo la calidez del alcohol.</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/negra.jpg" alt="negra" class="img-fluid">
+                </div>             
+                <div class="col-12 col-md-3">
+                    <h3>Porter Oscura</h3>
+                    <p class="text-justify">Sabor intenso a malta tostada y amarga con notas a café y chocolate, otorgándole una impresión ahumada.</p>
+                </div>              
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-3">
+                    <img src="img/mona.jpg" alt="dorada" class="img-fluid">
+                </div>             
+                <div class="col-12 col-md-3">
+                    <h3>Dorada</h3>
+                    <p class="text-justify">Color dorado de espuma blanca y sabor prolongado y especiado. Es ligeramente dulce con notas de miel y pan, con aroma a hierbas y cítricos. Amargor medio amaderado.</p>
+                </div>
+            </div>
+        </div>    
     </main>
-    <hr>
-    <footer>
-        <address>
-            Fabián Machuca<br>
-            &#9750; machucagelvez@gmail.com<br>
-            &copy; Todos los derechos reservados<br>
-            Envigado, 2020
-        </address>                  
+    <footer class="bg-warning">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3">
+                    <address>
+                        Fabián Machuca <br>
+                        Envigado, 2020 <br>
+                        machucagelvez@gmail.com
+                    </address>                    
+                </div>
+                <div class="col-12 col-md-3 text-right">
+                    <address>
+                        Facebook <br>
+                        Instagram <br>
+                        Twitter
+                    </address> 
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <p class="text-center">Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
